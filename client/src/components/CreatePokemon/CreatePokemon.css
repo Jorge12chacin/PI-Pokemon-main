@@ -1,0 +1,188 @@
+.input {
+  width: 43%;
+  height: 44px;
+  background-color: #5a5959;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  border: 1px solid white;
+  font-size: 1rem;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.input::placeholder {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.label {
+  margin-top: -1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: white;
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: white;
+}
+
+.button-create {
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+.form-create {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-create > div {
+  width: 50%;
+}
+
+.input-group {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.btn {
+  display: block;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  margin: 2rem auto 0 auto;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.btn:hover {
+  color: #e8e8e8;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.type {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.filter-option .filter:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.filter-option {
+  margin-top: 0.5rem;
+}
+
+.filter button {
+  margin-left: 0.3rem;
+}
+
+.img-create {
+  width: 20%;
+}
+
+.danger {
+  color: red;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.label-type {
+  height: 100%;
+  width: 100%;
+}
+
+.types-btn {
+  padding: 1px 15px 1px 10px;
+  border: unset;
+  border-radius: 10px;
+  color: #212121;
+  z-index: 1;
+  background: white;
+  position: relative;
+  font-weight: 1000;
+  font-size: 16.4px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  overflow: hidden;
+  border-radius: 1px 50px 50px 1px;
+}
+
+.types-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 1px 50px 50px 1px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.types-btn:hover {
+  color: #e8e8e8;
+}
+
+.types-btn:hover::before {
+  width: 100%;
+}
+
+.span-letters {
+  border: 0px;
+  border-radius: 50px 1px 1px 50px;
+  padding: 1px 15px 1px 10px;
+  background-color: white;
+}

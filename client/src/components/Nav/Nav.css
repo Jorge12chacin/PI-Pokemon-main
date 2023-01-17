@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.navbar::before {
+  background-color: #b91c1c;
+  content: "";
+  width: 200rem;
+  height: 2.8rem;
+  border-radius: 0;
+  position: absolute;
+}
+
+.navbar img {
+  width: 200px;
+}
+
+.detailnav {
+  width: 150rem;
+  height: 0.5rem;
+  background: black;
+  margin-top: 2.4rem;
+  position: absolute;
+}
+
+.detailnav::before {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -2.1rem;
+  margin-left: 25rem;
+}
+
+.detailnav::after {
+  content: "";
+  width: 3.8rem;
+  height: 3.8rem;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -1.5rem;
+  margin-left: 25.6rem;
+}
+
+.btns .btn {
+  color: black;
+  text-decoration: none;
+  margin: 1em;
+  margin-top: 3.2rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  align-self: center;
+  background-color: #e8e5e5b7;
+}
+
+.btns .btn:hover {
+  background-color: #9b193b;
+  color: white;
+  border-radius: 20px;
+}
+
+.btns {
+  display: flex;
+  margin-right: 2em;
+}
+
+@media screen and (max-width: 460px) {
+  .navbar {
+    display: block;
+  }
+}

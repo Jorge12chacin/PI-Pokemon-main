@@ -1,0 +1,86 @@
+.pokedeximg {
+  display: flex;
+  flex: box;
+  margin-left: -30em;
+  position: relative;
+  top: -5em;
+  width: 100%;
+  height: 100%;
+}
+
+.imgpoke {
+  width: 300px;
+  position: absolute;
+  margin-left: 23em;
+  margin-top: 6em;
+}
+.fullpokedex {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+  margin: 0;
+  font-family: system-ui;
+  background-color: black;
+}
+
+.pokedex {
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
+  width: 22rem;
+  margin: 0 auto;
+  overflow: initial;
+  border-radius: 50px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2px;
+  z-index: 1;
+  position: absolute;
+  top: 7em;
+  margin-left: -15em;
+  font-size: 19px;
+}
+
+.titlename {
+  margin-left: -1em;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.details img {
+  max-width: 90%;
+}
+
+.btn-back {
+  padding: 10px 10px;
+  border: black;
+  border-radius: 15px;
+  color: #212121;
+  background: #a5a4a4;
+  position: relative;
+  top: 45em;
+  font-weight: 1000;
+  font-size: 17px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -10em;
+}
+
+.borrar {
+  position: relative;
+  margin-top: -27.8em;
+  margin-left: 55.5em;
+}
+.delete-btn {
+  background-color: rgb(90, 222, 248);
+  height: 74px;
+  width: 74px;
+  border-radius: 100%;
+}

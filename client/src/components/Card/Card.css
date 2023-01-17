@@ -1,0 +1,122 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f5f5f5;
+  text-decoration: none;
+  background: #ff930f;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#ff0f0f),
+    to(#8f0909)
+  );
+  background: linear-gradient(to top, #ffffff 50%, #ae1616 50%);
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 68%;
+}
+
+.detail {
+  width: 35rem;
+  height: 0.5rem;
+  background: black;
+  margin-top: 0.2rem;
+  position: absolute;
+}
+
+.detail::before {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -2.1rem;
+  margin-left: 4rem;
+}
+
+.detail::after {
+  content: "";
+  width: 3.8rem;
+  height: 3.8rem;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -1.5rem;
+  margin-left: 4.6rem;
+}
+
+.card-info {
+  padding: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.imgCard {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #212121;
+}
+
+.subtitle {
+  font-weight: 400;
+  line-height: 1em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.card:hover::before {
+  background-color: rgba(80, 64, 44, 0.25);
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  overflow: hidden;
+  margin: 0px 0px 240px 0px;
+}
+
+.delete-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.delete-btn:hover {
+  color: #e8e8e8;
+}
+
+.delete-btn:hover::before {
+  width: 100%;
+}

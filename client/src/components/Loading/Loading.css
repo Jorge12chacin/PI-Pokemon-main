@@ -1,0 +1,14 @@
+.loading-son {
+  position: absolute;
+  top: 17%;
+  left: 30%;
+}
+.loading {
+  background: black;
+  width: auto;
+  height: 100rem;
+}
+.img-loading {
+  width: 150%;
+  border-radius: 5%;
+}

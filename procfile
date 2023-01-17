@@ -1,0 +1,2 @@
+api: api/npm start
+client: client/npm start
